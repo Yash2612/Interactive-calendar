@@ -1,0 +1,185 @@
+
+body
+{
+	font-family: courier new;
+	margin:0;
+	padding: 0;
+	background-image:url("../images/login.jpg");
+
+}
+ul {
+	list-style-type: none;
+	empty-cells: hide;
+}
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.grid
+{
+	display: grid;
+	grid-template-areas: 
+	'head head'
+	'menu menu'
+	'events calender';
+	padding:0px;
+	margin:0;
+}
+#title
+{
+	grid-area: head;
+	text-align: center;
+	text-transform: capitalize;
+	color: white;
+	margin:0;
+	padding:50px;
+	
+	border:1px solid white;
+	font-size: 80px;
+}
+.menu
+{
+	grid-area: menu;
+	
+	border:1px solid white;
+	padding: 30px;
+}
+.menu ul
+{
+	margin: 0;
+	
+}
+.menu  li
+{
+	display: inline-block;
+	color:white;
+	font-size: 30px;
+	color: #d3d3d3;
+}
+#activities
+{
+margin-left:5%;
+}
+#logout
+{
+margin-left:50%;
+}
+#about
+{
+margin-left:5%;
+}
+.calender
+{
+	grid-area: calender;
+	border:1px solid white;
+
+}
+.calender .month 
+{
+	text-align: center;
+	text-transform: capitalize;
+	color: white;
+	padding:10px;
+	
+	margin: 0;
+	border:1px solid white;
+	font-size: 40px;	
+}
+.calender .month #prev
+{
+	float: left;
+  padding-top: 10px;
+}
+.calender .month #next
+{
+	float: right;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+table
+{
+	width: 100%;
+	border:none;
+	border-collapse: collapse;
+}
+.calender .weeks
+{
+	border:1px solid white;
+	
+}
+
+.calender .weeks th
+{
+	display: inline-block;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	width: 13.7%;
+	font-size: 40px;
+}
+.calender .days
+{
+	
+	
+	padding: 10px;
+}
+.calender .days td
+{
+	display: inline-block;
+	color:white;
+	font-size: 98px;
+	text-align: center;
+	width: 13.6%;
+	padding-bottom: 10px;
+}
+.day_inactive
+{
+	border:1px solid rgb(255,255,255,0);
+}
+.day_active
+{
+	border:1px white solid;
+}
+.day_active:hover
+{
+	cursor: pointer;
+	background-color: pink;
+}
+.calender .days .day_selected
+{
+	border:1px white solid;
+	background-color: green;
+}
+.events
+{
+	grid-area: events;
+	
+	border-right:1px solid white;
+}
+.events ul
+{
+	padding:0;
+	margin:0;
+}
+.events .event_head 
+{
+	text-align: center;
+	text-transform: capitalize;
+	color: white;
+	font-size: 50px;
+	padding: 50px 50px 45px;
+	
+	margin: 0;
+}
+.events li
+{
+	text-transform: capitalize;
+	color: white;
+	font-size: 30px;
+	padding-right: 100px;
+	
+	border  : 1px white solid;
+}
+

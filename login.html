@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+</head>
+<body>
+<h1>LOGIN</h1>
+<form name="form1" action="home.html" onsubmit="return validate()">
+	<div class="imgcontainer">
+	<img src="images/avatar2.png">
+	</div>
+	<div class="container">
+		<p>Username</p>
+		<input id="uname" type="text" name="uname" placeholder="Enter Username(default:admin)" required>
+		<p>Password</p>
+		<input id="passw" type="Password" name="psw" placeholder="Enter Password(defualt:password)" required>
+		<br>
+		<button type="submit">Login</button>
+		<button><a href="signup.html">SignUp</a></button>
+	</div>
+	<div class="container">
+		<button class="cancelbtn" type="button"><a href="#">Cancel</a></button>
+		<button class="forgotp" type="button">Forgot Password?</button>
+	</div>
+</form>
+</body>
+</html>
+<script type="text/javascript" src="javascript/login.js"></script>
